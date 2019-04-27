@@ -1,4 +1,6 @@
-# Requirements Engineering 
+Continuing on from last week.. Requirements engineering is a major feature of Software Engineering! 
+
+## 2. Requirements Engineering 
 
 > "A condition or capability needed by a user to solve a problem or achieve an objective” 
 
@@ -8,17 +10,15 @@ Requirements Engineering is:
  * A **negotiation process** where we explore the requirements for what a user needs and wants
  * Accounting for the different stakeholders (End users, Customer, Design team etc.)
     
+#### Functional and Non-functional requirements  
 
-### Functional and Non-functional requirements  
----
-
-Function requirements define the funcationality of the "system to be." These include things such as:  
+*Function requirements* define the funcationality of the "system to be". These include things such as:  
 
  * Inputs, Output
  * Behaviours of the system
  * NULL conditions, escape routes
    
-Non-functional requirements describe the **quantity** attributes of the "system to be"   
+*Non-functional requirements* describe the **quantity** attributes of the "system to be"   
 
  * Perfomance - Taking in the reponse time and network letency
  * Reliability - mean time between failures
@@ -27,12 +27,16 @@ Non-functional requirements describe the **quantity** attributes of the "system 
 
   
 
-### Phases of Requirements Engineering
----
+#### Phases of Requirements Engineering
 
-1. Requirements Gathering    
+![phases of requirements engineering](/images/phases_requirements.png)
+
+1. Requirements Gathering - THE TALKING 
+
+Very rarely do clients know exactly what they want, so we have to figure it out. Often we can miss requirements as the communication is not clear or we have limited access to clients. There could also be multiple stakeholders, which would create conflicting interests/priorities. 
+
 2. Requirements Analysis   
-    - Conclude a statement of requirements or a "Vision statement'  
+    - Conclude a statement of requirements or a "Vision statement' 
     - Refine and reason about the requirements 
     - Scope the project 
     - Identify dependencies, conflics and risks 
@@ -46,34 +50,58 @@ Non-functional requirements describe the **quantity** attributes of the "system 
     - Document the functional and non-functions requirements   
     - Using the AGILE documentation styles, we encode the design ideas   
 4. Requirements Validation   
- 
     Often times challenges can be that the client does not know what they want   
 
+## Case Study: Home Access 
 
-# User Stories 
+A home access conntrol system has several functions such as door lock control, lighting controll, intrusion detection.
 
-I ndependent  
-N egotiable  
-V aluable  
-E stimatable  
-S mall  
-T estable 
+#### Iteration 1 
 
-# USE-Cases
+Support basic door unlocking and locking functions.  
 
-Use-case scenarios
+To solve this, we could have a simple authentication based on a valid key. Anyone with knowledge of key is permitted to enter.   
 
-Example: 
---- 
-Use Case title: Pay for a job posting  
+BUT, how do we handle failed attempts? 
 
-Primary Actor: Recuiter   
+Consider our new requirement: 
 
-Level: Actor goal   
+ 
+> The system shall keep the door looked at all times unless instructued otherwise by an authorised user. When the lock is diarmed, a countdown shall be initiaed at the end of which the lock shall be automatically armed (if still unarmed)
 
-Pre-condition: The job information hsa been entered but is not viewable   
 
-Minimal Guaranteers: None    
+This is a long and complex requirement which can be split into two separate requirements. 
 
-Success Guaranteers: Job is posted, recuiter's 
-credit cars is changed    
+
+> 1. The system shall keep the doors locked at all times, unless commanded other by an authorised user
+> 2. When the lock is diarmed, a countdown shall be initiaed at the end of which the lock shall be automatically armed (if still unarmed)
+
+#### User Stories 
+
+Use the RGB Model (Role Goal Benefit):
+``` 
+As a <user>, I want <goal> so that <benefit> 
+```
+
+OR, alternatively you could use the three C's model: *Card, conversation, comfirmation*
+
+Note: 
+Epic User Stories contain user stories   
+User stories contain acceptance criterias 
+
+#### Use-Case Modelling 
+
+Models a set of use-cases which describe the tasks to be performed by the 'system-to-be' 
+
+It signifies what the system needs to accomplish (AND NOT HOW) 
+
+Things to use: 
+```
+1. <<initiaties>> Used when an actor initiates a request/functionality 
+2. <<participates>> Used when an actor is only involved when called for
+3. <<includes>> Used when a user-story includes another user-story 
+4. <<extends>> Used to show an optional user-story
+
+```
+# Summary 
+![mind-map-1](/images/mind_map_1.png)
