@@ -1,29 +1,60 @@
-# (More) Software Development Methodologies 
+# (More Iterative) Software Development Methodologies 
 
-1. Waterfall Model (1970s)
---- 
-* Performing each development one at a time.  
-* Requirements, Design, Implementation, Testing, Deployment and maintenance.  
-* Unique identity: once you have finished an aprt, you cannot go back to modify it. 
+> Revision:: Iterative Software Development Methodologies
+> * approaches break big problems down  
+> * after each iteration seek cusomter feedback 
+> * seeks to get a working instance as soon as possible 
+> * progressively understand or viaulise the product  
 
-2. Incremental and Iterative Project Life-Cycle 
----
-* Breaks the big problem down and prioritises each step 
-* Seeks client feedback after each iteration or increment 
-* Aims to progressively deeping the understanding or "visualisation" of a product to get a working instance as soon as possible 
+Some examples include: 
+* Rational Unified Process 
+* Agile methodologies (XP, SCRUM) 
+* Unified Software development process  
 
-3. Rational Unified Process (RUP)
----
-* Uses an iterative approach and has 4 major phases
-* **Inception**: scope and identify major players, recourses, architecture risks and estimate costs 
-* **Elaboration**: Understanding problem in detail 
-* **Construction** Design, build and test
-* **Transition**: release software to production
+### Rational Unified Process (RUP)
+Uses an iterative approach and has 4 major phases
 
-4. Agile Software Methodologies
----
-Agile development values: 
+* **Inception**
+
+Scope and identify major players, recourses, architecture risks and estimate costs 
+
+* **Elaboration**
+
+Understanding problem in detail 
+
+* **Construction**
+
+ Design, build and test
+
+* **Transition**
+
+Release software to production
+
+Note: Does all the life-cycle steps at the same time (when required) 
+
+![rup-diagram](/images/rup.png) 
+
+
+### Agile Software Methodologies
+
+#### Agile development values: 
 * Individuals and interactions over processes and tools 
 * Working software over comprehensive documentation 
 * Customer collaboration over contract negotiation 
 * Responding to change over following a plan 
+
+#### Some include: 
+* Scrum
+* DSDM 
+* FDD 
+* XP 
+* Crystal 
+* Lean 
+
+#### Benefits? 
+
+* Increased productivity 
+* Increased quality 
+* Improve stakeholder satisfaction
+* Reduced costs 
+

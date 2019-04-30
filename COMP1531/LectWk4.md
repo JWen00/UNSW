@@ -1,197 +1,166 @@
-# Actual Python Programming 
+# Actual Python Programming (yay)
 
-### Creation of Classes 
+## Creating Classes 
+A class is a blueprint to instantiating (many) instances of objects. 
 
-A class is similar to a blueprint. It is a skeleton which can be used over and over again. 
+It is a skeleton which can be used over and over again. 
 
-As we said, it contains attributes and methods. 
-For exmaple: 
-
+A class contains *attributes* and *methods*.
 ``` python 
+class ClassName: 
+    def __init__(self, attribute): 
+        self._attribute = attribute 
 
-class Person: 
-    def __init__(self, name): 
-        self._name = name 
-
-    def walking_distance(self, distance): 
-        print(self.name, "is walking", distance, "meters") 
-
-person = Person(Jennifer)
-person.distance(2000)
-
+    def hello_method(self): 
+        print(f'Hello {{attributes}}) 
 ```
+In the example, we have created a simple class which contains one attribute and one method.   
 
-**Note:** Classes usually begin with capitals (cause y not)   
-**Note:** \_\_init\_\_ is called a constructor   
-**Note:** For the constructer, it should always be private to ensure encapsulation (as discussed below)
+ `__init__` is a *constructor* which essentially sets up the object with the given parameters. 
 
-### Encapsulation
+ All attributes have an underscore to show that it is **private** should not be touched by functions outside of the class. 
 
-This basically means that we don't want the values within the class to be directly accessible. 
+> **Note:** Classes usually begin with a capital ONLY as a convention
+
+
+## Encapsulation 
 
 > *"We want to preserve the state of our object"*
 
+This basically means that we don't want the values within the class to be directly accessible. 
+
 We can encasupate our code using **getters and setters.** 
-
-#### Getters and Setters 
-
-To access the name from outside of the class, we can create a **getter.**
-
 ``` python 
+class ClassName: 
+    def __init__(self, attribute): 
+        self._attribute = attribute 
 
-class Person: 
-    def __init__(self, name): 
-        self._name = name 
+    @property # The getter 
+    def attribute(self): 
+        return self._attribute 
 
-    def get_name(self): 
-        return self.name
+    def attribute(self): # NOT a getter
+        return self._attribute 
+```
+In the example, we create a getter using the decorator `@property`.   
 
-print(person.get_name())
+This decorator allows us to access the attribute of the object, knowing that it is an attribute, rather than a function.   
+
+Consider: 
+
+```python 
+example = ClassName(has_attribute) 
+
+# Using the getter 
+print(example.attribute) 
+# Returns "has_attribute" 
+
+# Without the getter 
+print(example.attribute()) 
+# Also returns "has_attribute" but is inefficient
+
 ```
 
-Similarly, if we want to set the name from outside of the class, we can create a **setter.** 
-
+The setter operates in a similar manner
 ``` python 
+class ClassName: 
+    def __init__(self, attribute): 
+        self._attribute = attribute 
 
-class Person: 
-    def __init__(self, name): 
-        self._name = name 
-
-    def get_name(self): 
-        return self.name
-
-    def set_name(self, new_name): 
-        self.name = new_name
-
-print(person.get_name())
-person.set_name("Jenn")
+    @attribute.setter # The setter
+    def attribute(self, new_attribute): 
+        self._attribute = new_attribute 
 ```
+## Inheritance and Abstract Classes 
 
-
-### Abstraction and Inheritance
-
-**Abstraction** is the method or organising objects into groups based on common attributes.
+#### Inheritance 
 
 **Inheritance** is a programming principle that allows to define parent and child relationships between classes. 
 
-#### Example of inheritance: 
 ```python
 class Shape: 
     def __init__(self, colour): 
         self._colour = colour
-
-class Circle(Shape): 
-    def __init__(self, colour, radius): 
-        self._colour = colour
-        self._radius = radius
-```
-
-Here, you **cannot** instantiate a shape directly. However you **can** instantiate a circle. 
-
-#### Example without using abstract method: 
-
-If we want to have the same functions for the sub-classses as the parent class so I have written the functions many times :( 
-    
-
-```python
-class Shape: 
-    def __init__(self, colour): 
-        self._colour = colour
-
-    @property 
-    def area(self): 
-        pass
-
-    # Note: the decorator `@property` means that
-    # When we call the function we can call: 
-    # shape.area rather than shape.area() 
-
-class Circle(Shape): 
-    def __init__(self, colour, radius): 
-        self._colour = colour
-        self._radius = radius
-
-    def get_area(self): 
-        return 3.142 * self._radius * self._radius
-
-# This does NOT work
-random_shape = Shape(white) 
-
-# This also doesn't work 
-print(random_shape.get_area()) 
-
-# This, DOES work
-c = Circle("white", 5) 
-print(c.get_area())
-
-```
-
-#### Example using **super()**: 
-
-```python
-
-from abc import ABC, abstractmethod 
-
-class Shape: 
-    def __init__(self, colour): 
-        self._colour = colour
-
-    @abstractmethod 
-    def get_area(self): 
-        pass 
 
 class Circle(Shape): 
     def __init__(self, colour, radius):
         super().__init__(colour) 
+        self._radius = radius
+```
+In the example, we have created a parent class called *Shape* and a child class called *Circle*. 
+
+Here, *Circle* inherits all of *Shape*'s properties (*colour*).
+
+These properties are created using the parent class' constructor through the function `super()` 
+> The function is called super as the parent class is also referred t
+
+*Circle* also contains unique properties which do not exist within *Shape* (*radius*) 
+
+In this example, you can instantiate an instance of *Shape* as well as an instance of *Circle*. 
+
+If we wish to only be able instantiate instances of *Circle*, then we need to use Abstraction. 
+
+#### Abtraction
+```python
+from abc import ABC
+
+class Shape(ABC): 
+    def __init__(self, colour): 
+        self._colour = colour
+
+    @abstractmethod
+    def area(self): 
+        pass
+
+class Circle(Shape): 
+    def __init__(self, colour, radius): 
         self._colour = colour
         self._radius = radius
 
-    get_area(self): 
-        return return 3.142 * self._radius * self._radius
+    def area(self): 
+        return 3.142 * self._radius * self._radius
 
 ```
+Abstaction requires `from abc import ABC`. 
 
-Two new things: 
-1. super() calls and runs all the functions of the parent class 
+To make *Shape* an abstract class we specify: `class Shape(ABC)` 
 
-2. @abstractmethod means you MUST implement the same functions within the sub-classes of the current class 
+This means we can no longer instantiate objects of type *Shape* 
 
-### Association Relationships in OOP 
+The decorator `@abstractmethod` means that in each instance of a child class, there MUST be a function called `area`. 
 
-**Aggregation** is when a child can exist independently from its parent. It is drawn in a UML by a white diamond. 
+## Exception Handling 
 
-**Composition** is when a child cannot exist independently from its parent. It is drawn in a UML by a black diamond. 
+> Covered in week 5 but included it here to better suit the content 
 
-`Refer to Engine example`
+An Exception is an 'error' which occurs during the execution of a program 
 
-### Decorators 
+Exception handling enables us to handle these type of situations with grace and avoids putting the entire program to a halt. 
 
-Decorators refer to the '@' symbol above functions. They can wrap around a function and make it do a particular step before the function works. 
-
-Some decorators which we have seen before include '@property' and '@setter.property' 
-
-#### For example - Without using decorators 
-
-```python 
-def hello(): 
-    msg = ("Hi Jennifer!")
-
-    def greeter(): 
-        print(msg) 
-    
-    return greeter
-
-hello()
-# Calling greeter() will return an error. 
-```
-This function would return "Hi Jennifer!" as you would expect.   
-
-Something to notice is the function greeter within the function hello. 
-
-"greeter" only has access to the local scope of the outer function "hello" 
-
-#### For Example - Using decorators 
-
+#### Syntax of `<try-except-else>` block
 ```python
-
+try: 
+    # Perform operation 
+except Exception1:
+    # If exception1 occurs, execute.. 
+except Exception2: 
+    # If exception2 occurs, execute.. 
+else: 
+    # If there are no exception, execute.. 
+finally: 
+    # Always execute.. 
 ```
+
+Common (built-in) exception
+* IOError 
+* Import Error 
+* ValueError
+* EOFError 
+* ZeroDivisionError
+* AssertionError
+
+## Asserts in python 
+
+DO NOTs: 
+1. Don't use asserts for data validation or data procressing 
+2. Ye that's it..xd

@@ -104,4 +104,4 @@ Things to use:
 
 ```
 # Summary 
-![mind-map-1](/images/mind_map_1.png)
+![mind-map-2](/images/mind_map_2.png)

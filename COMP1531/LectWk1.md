@@ -52,13 +52,13 @@ AKA How we can carry out our life-cycles.
 #### Waterfall Model 
 
 * Is a linear sequential project life-cycle characterised by detailed planning:    
-        1. Problem is identified, documented and designed 
-        2. Implementation tasks identified, scoped and scheduled 
-        3. Development cycle followed by testing cycle
-  * Once a task is completed and documented, you cannot go back to the same task 
-  * Project visibility 
-  * Suitable for **stable** products (those with well known requirements)  
-  * Rigid, not flexible and not possible for fine tuning 
+  1. Problem is identified, documented and designed 
+  2. Implementation tasks identified, scoped and scheduled 
+  3. Development cycle followed by testing cycle
+* Once a task is completed and documented, you cannot go back to the same task 
+* Project visibility 
+* Suitable for **stable** products (those with well known requirements)  
+* Rigid, not flexible and not possible for fine tuning 
 
 #### Incremental and Iterative Project Life-Cycle 
 These approaches break big problems down   
@@ -70,7 +70,7 @@ It seeks to get a working instance as soon as possible and progressively underst
 
 Some examples include: 
 * Unified Software development process  
-* Rational Unified process 
+* Rational Unified Process (Lect06)
 * Agile methodologies (XP, SCRUM) 
 
 # Summary

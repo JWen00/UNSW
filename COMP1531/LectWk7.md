@@ -1,5 +1,5 @@
-# Effective Software Design (Wk07) 
-> A.K.A. Why we should write good code
+# Effective Software Design
+ A.K.A. Why we should write good code
 
 ### Design Smells 
 
@@ -13,7 +13,7 @@ When this happens, it is caused by:
 
 > Reminder: Refactoring is re-structuring the internal struture to make it easier to understand and modify without changing it's external observable behaviour 
 
-Design Smells 
+
 1. Rigidity - Cannot make small changes without causing a cascade of changes 
 2. Fragility - Tendency for code to break from small changes 
 3. Immobility - Design is hard to reuse  
