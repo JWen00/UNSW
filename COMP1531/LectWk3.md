@@ -6,11 +6,20 @@ The domain model provides a visual representation of the problem, through decomp
 
 We want to map out the model into a conceptual model and see how each actor plays out with each other  
 
+### Key Ideas
+Domain Models allow us to
+
+* consider what is the central problem (*core domain*) and it's relationship between sub-parts (*sub-domains*) 
+
+* ensure that the system reflects a deep understanding of the problem domain as objects represent domain concepts
+
+* foster unambiguous shared understanding of the problem domain 
+
+## What are objects? 
+
 Domain model are mostly based on the O-O design paradigm. 
 
 But first, O-O Programming..?
-
-## What are objects? 
 
  1. Objects are entities. 
 
@@ -44,7 +53,7 @@ AKA an object is **instantiated**  from a class
 
 1.  Abstraction 
 
-Abstractions means making a class/object generic and therefore being able to fucs on the common properties and behaviours of objects
+Abstractions means making a class/object generic and therefore being able to focus on the common properties and behaviours of objects
 
 2.  Encapsulation 
 
@@ -75,6 +84,8 @@ AKA One class is a subset of another class.
 
 The subset *inherits* the attributes and methods from the other class. 
 
+ ![inheritance example](/images/inheritance.png)
+
 2. Association 
 
 Association between two classes shows that they are linked to each other in some manner. 
@@ -86,10 +97,8 @@ Association between two classes shows that they are linked to each other in some
 **C** ollaboration   
 
 For example
-> A customer (The class)    
+> A customer  
  deposits money into an **account**    
- (The collaboration)  
- (The Responsibility)   
 
 The creation of CRC models 
 1. Read the description
@@ -102,6 +111,24 @@ The creation of CRC models
 
 
 A good method to see if it works is a **Scenario Walk-through** 
+
+### Types of Association 
+1. Association is a special type of relationship between two classes
+
+> Shown as a line between two classes 
+
+2. Aggregation is when a whole class contains another class 
+ 
+> Shown as a white diamond, for example, [Car]<>--[Wheels] means a Car contains Wheels 
+
+3. Composition is when a class cannot exist without another class 
+
+> Shown as a black diamond, for example, [Book]<//>--[Pages] means a book cannot exist without pages 
+
+
+# Summary 
+![summary-week-4](/images/mind_map_4.png)
+
 
 
 
