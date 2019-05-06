@@ -1,2 +1,7 @@
-# UNSW2521_19t0
-Just some stuff reviewing what I learnt.. If I ever need it 
+# TODO: 
+
+* Make website to view everyythingg --> Explore Bulma :}
+* Leaderboard ;-; 
+* Put 1531 assignment into this repo and improve 
+* Calender!! 
+
