@@ -89,6 +89,19 @@ Note:
 Epic User Stories contain user stories   
 User stories contain acceptance criterias 
 
+To ensure good user stories we use the INVEST framwork:  
+* **I Independant**  
+    Should be separate and different from other user stories 
+* **N Negotiable**   
+    Avoid Too much detail to negotiate the requirements
+* **V Valuable**  
+    To make sure that we're clear on the "why" 
+* **E Estimable**  
+    user story should be able to be divided up into different tasks
+    
+* **S Small** 
+* **T Testable**
+
 #### Use-Case Modelling 
 
 Models a set of use-cases which describe the tasks to be performed by the 'system-to-be' 

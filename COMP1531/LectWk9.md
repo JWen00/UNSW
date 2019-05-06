@@ -39,8 +39,6 @@ ie. a employee can only be a permanent or contract employee
         > associated with once instance of the addresss 
     Example 2 works if the customer has multiple addresses
 
-### ORDER TO TALK ABOUT 
-1.35H in TODO: 
 
 # Relational Data Model 
 popular in the last decade 

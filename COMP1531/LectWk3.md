@@ -109,6 +109,10 @@ The creation of CRC models
 6. Add more classes as you discover them 
 7. Refine by identifying inheritance 
 
+It is important to keep in mind the 3 C's :   
+**C** Card   
+**C** Conversation   
+**C** Comfirmation   
 
 A good method to see if it works is a **Scenario Walk-through** 
 
