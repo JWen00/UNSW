@@ -6,6 +6,13 @@
 5. Small 
 6. Testable
 
+# Check list for Use-Case diagrams
+1. identify the actors first
+2. Each bubble is a usecase
+3. associations are: paricipates, initiates, extends and includes
+4. extends is optional
+5. includes is not optional
+
 # Checklist for Class diagrams: 
 1. Identify classes (Needs a system class) 
 2. Find associations   

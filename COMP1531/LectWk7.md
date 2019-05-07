@@ -18,7 +18,7 @@ When this happens, it is caused by:
 2. Fragility - Tendency for code to break from small changes 
 3. Immobility - Design is hard to reuse  
 4. Viscosity - Filling in holes rather than preserving methods 
-5. Opacity - Difficulty to understand the code
+5. Opacity - Difficulty to understand the code (ie. bad variable names or function names) 
 6. Needless complexity - Contains constructs not useful 
 7. Needless repetition - repeated classes which could be unified 
 

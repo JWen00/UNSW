@@ -108,7 +108,7 @@ Models a set of use-cases which describe the tasks to be performed by the 'syste
 
 It signifies what the system needs to accomplish (AND NOT HOW) 
 
-Things to use: 
+associations to use: 
 ```
 1. <<initiaties>> Used when an actor initiates a request/functionality 
 2. <<participates>> Used when an actor is only involved when called for

@@ -95,11 +95,33 @@ Examples include:
 * More demanding of peers
 
 
-## TODO: DOn't reall understand peer to peer that weel? 
 
-#### Pipe-and-filter 
-#### Central Repository (database)
-#### Layered
+Name the architectural style used in each of the following applications:  
+a. Real-time updates on stock prices, weather updates, sporting results
 
+event driven
+
+b. Traditionally, the updates for any Windows device were delivered directly from Microsoft's Windows Update servers. While this is the most secure way of getting untampered files, it's not the fastest delivery method that you can use. Windows 10 computers and devices can connect to each other and get updates not only from Microsoft’s dedicated servers, but also from other Windows 10 devices that have
+already downloaded parts of the updates.  
+
+peer-to-peer
+
+c. A radio station where people tune into their favourite programs
+
+client server
+
+d. Amazon web services
+
+n-tiered/layered [buh-buhhhh]
+
+is service oriented
+
+e. ls marks | grep student_id
+
+pipe and filter
+
+f. Napster
+
+peer-to-peer
 
 
