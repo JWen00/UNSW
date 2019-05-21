@@ -1,4 +1,3 @@
-
 # Software Engineering 
 
 Software engineering bridges the gap between the *business problem* and *business goal*. 
