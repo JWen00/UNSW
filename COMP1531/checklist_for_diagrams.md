@@ -23,8 +23,6 @@ Composition, Aggregation, Inheritance
 5. Identidy methods & properties (public) 
 6. Methods needs return values
 
-
-
 # Checklist for ER diagrams 
 1. Entity, relationship, then attributes
 2. Strong and Weak Entities 
