@@ -1,4 +1,4 @@
-Cover Page   
+
 
 Dear Gitzon Security and HR Team,
 
