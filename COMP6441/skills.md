@@ -7,6 +7,7 @@ I have gained a multitude of practical skills not only during this course, but a
 * [Merkles Puzzle](https://jennax-seceng.tumblr.com/post/185901350811/wk03-notes)
 * Solving Crypto Puzzles - Able to solve the midsem puzzle in under 5 minutes
 * [Understanding Mac Hashes](https://jennax-seceng.tumblr.com/post/185999164706/week-05-notes)
+
 ## Extra Research done based on lectures: 
 * [What is a Virus and how does it work?](https://jennax-seceng.tumblr.com/post/185445335941/virus-whats-that)
 * [Claude Shannon - Sending words and sounds with bits!](https://jennax-seceng.tumblr.com/post/185669124201/hmk-enthusiasm1)
