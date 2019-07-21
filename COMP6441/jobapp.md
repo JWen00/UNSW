@@ -10,7 +10,7 @@ I am writing to express my interest the Security Engineer job listing. I believe
 * [Community and Professionalism](community.md)
 * [My Something Awesome Project](sthAwesome.md) 
 
-They effectively demonstrate my professionalisml, ability to analyse critically, and most importantly, passion to ensure constant improvement and life-long learning. 
+They effectively demonstrate my professionalism, ability to analyse critically, and most importantly, passion to ensure constant improvement and life-long learning. 
 
 Should you have any further questions, please do not hesitate to contact me. 
 
