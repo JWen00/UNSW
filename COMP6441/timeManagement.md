@@ -12,13 +12,14 @@ Although we are not required to complete 100% of the course activities, however 
 
 ## Lecture Notes and Weekly Activities Completed
 
-* Weekly Lecture Notes ([1](https://jennax-seceng.tumblr.com/post/185441670181/thots-on-lect01), [2A](https://jennax-seceng.tumblr.com/post/185630154131/wk02-a-notes), [2B](https://jennax-seceng.tumblr.com/post/185631707816/wk02-b-notes) [3](https://jennax-seceng.tumblr.com/post/185901350811/wk03-notes), [4](https://jennax-seceng.tumblr.com/post/185901812766/wk04-notes), [5](https://jennax-seceng.tumblr.com/post/185999164706/week-05-notes), [6](https://jennax-seceng.tumblr.com/post/186415228531/week-6-lectures), [7](https://jennax-seceng.tumblr.com/post/186322711311/week-07-notes-a)) 
+* Weekly Lecture Notes ([1](https://jennax-seceng.tumblr.com/post/185441670181/thots-on-lect01), [2A](https://jennax-seceng.tumblr.com/post/185630154131/wk02-a-notes), [2B](https://jennax-seceng.tumblr.com/post/185631707816/wk02-b-notes) [3](https://jennax-seceng.tumblr.com/post/185901350811/wk03-notes), [4](https://jennax-seceng.tumblr.com/post/185901812766/wk04-notes), [5](https://jennax-seceng.tumblr.com/post/185999164706/week-05-notes), [6](https://jennax-seceng.tumblr.com/post/186415228531/week-6-lectures), [7A](https://jennax-seceng.tumblr.com/post/186322711311/week-07-notes-a), [7B](https://jennax-seceng.tumblr.com/post/186510323381/week-7b-notes))
 
 * Weekly Activities 
     * [Grandma Martha](https://jennax-seceng.tumblr.com/post/186177254186/grandma-martha)
     * [thisAmericanLife](https://jennax-seceng.tumblr.com/post/186153039791/thisamericanlife)
     * [Human Weakness-Corruption](https://jennax-seceng.tumblr.com/post/185772795136/yes-its-hmk-spamming-time)
     * [Human Weakness-Selfishness](https://jennax-seceng.tumblr.com/post/185772795136/yes-its-hmk-spamming-time)
+    * [Human Weakness-Honesty](https://jennax-seceng.tumblr.com/post/186531957286/weakness-dishonesty)
     * [Data-Breach Prefiction](https://jennax-seceng.tumblr.com/post/185772795136/yes-its-hmk-spamming-time)
     * [Make a bold prediction](https://jennax-seceng.tumblr.com/post/185772795136/yes-its-hmk-spamming-time)
     * [Steal a penguin](https://jennax-seceng.tumblr.com/post/185670035326/warning-strictly-illegal)
