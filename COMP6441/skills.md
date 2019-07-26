@@ -8,6 +8,7 @@ I have gained a multitude of practical skills not only during this course, but a
 * Solving Crypto Puzzles - Able to solve the midsem puzzle in under 5 minutes
 * [Understanding Mac Hashes](https://jennax-seceng.tumblr.com/post/185999164706/week-05-notes)
 * Breaking Locks - Broke my lock at the gym with two spanners 
+* RSA and Duffie Hellman Key Swaps (See below)
 
 ## Extra Research done based on lectures: 
 * [What is a Virus and how does it work?](https://jennax-seceng.tumblr.com/post/185445335941/virus-whats-that)
@@ -34,7 +35,9 @@ Furthermore, I have gained practical knowledge from my something awesome project
 ## Technical Skills Gained from Something Awesome: 
 Throughout the development of my something awesome project, I have been able to develop a new range of skills.
 
-* Learning Flask (POST/GET Requests)
-* Setting up and using SQLite3
-* Learning simple Javascript commands and how to work around exisitng XXS checks
+* Flask (POST/GET Requests)
+* SQLite3 
+* Simple Javascript commands and how to work around exisitng XXS checks
+* Learnt about flags which you had to flicker off to let the computer know your code is S A F E
+* 
 

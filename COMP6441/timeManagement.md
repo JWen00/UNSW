@@ -29,7 +29,7 @@ Although we are not required to complete 100% of the course activities, however 
     * [Paper Shredding](https://jennax-seceng.tumblr.com/post/185515523526/ah-ofc-trump-will-need-more-than-a-million-years)
     * [NSA Crypto Challange](https://jennax-seceng.tumblr.com/post/185442802826/waow-im-so-entertained)
 
-* Weekly Case Studies done on time 
+* Weekly Case Studies
     * [Case 2 Pre-Reading: Houdini](https://jennax-seceng.tumblr.com/post/185533399151/case-study-2-harry-houdini)
     * [Case 2: Analysis: Houdini](https://jennax-seceng.tumblr.com/post/185632647666/harrys-big-brain)
     * [Case 3: Co-Pilot Dilemma (Pre-Reading and Post Anlysis)](https://jennax-seceng.tumblr.com/post/185703542211/wk03-co-pilots-be-salty)
