@@ -26,10 +26,8 @@ Online Recon:
 Offline Recon: 
 * Dumpster Diving
 
-# Merkle Puzzles 
 
-
-# This week's secret - Design the security of a secret project site
+# Design the security of a secret project site
 ## 1) Main things needing to be protected 
 * Privacy of information 
 * Accessibility of the site 
