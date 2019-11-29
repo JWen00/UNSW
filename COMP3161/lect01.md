@@ -1,20 +1,38 @@
 # 01 
 
-Backus-Naur 
-* terminals & non terminals 
+## Understand your computer better
 
-## Stages of a compiler 
-1. Program string => lexer 
-2. Sequence of tokens => parser
-3. Parse Tree => semantic analyser (findingt the mearning of a program) 
-4. Annotated Parse Tree => optimiser 
-*  Intermediate Represenation => Code Generator 
-5. Machine Code
+In languages like _C_, _C++_ and _Haskell_ a **compiler**  translates your code into a **target language** (e.g machine code) 
 
-## Course Outline 
-* Lexer (wk 1-3)
-* Parsing (wk 1-3) 
-* Semantics (focus) 
+Alternatively, in languages like _Perl_, _Python_ and _Javascript_, an **interpreter executes a program from your code. 
+
+Other languages use both! For example, _Java_ **compiles** and then **interprets** before getting to machine code. 
+
+## Compilers 
+
+Stages of a compiler 
+1. Lexer 
+    *  given an input, produces a stream of _tokens_ 
+    
+2. Parser 
+    * converts the tokens in a **parse tree** or **abstract syntax tree**
+    * structure of lexemes(tokens) to produce certain parse trees is **grammar**   
+
+> NOTE: **Backus-Naur** have terminals & non terminals which specify grammatical structures 
+
+3. Semantic Analyser 
+    * Checks variable scoping 
+    * Adds additional information to the parse tree 
+
+4. Optimising (optional)(?) 
+    * Loop unrolling, loop fusion, 
+    * Inlining specialisation 
+    * Can transform the tree dramatically 
+
+5. Code Generator 
+    * registers allocation and explicit control flow 
+    * Links runtime systems 
+    * Selects appropriate machine instructions 
 
 ## Changing C code into Haskell 
 
@@ -99,3 +117,4 @@ lexer n (' ':cs) = lexer n cs
 lexer n ('\n':cs) = lexer (n+1) cs
 ```
 
+Second half of week 1 lectures are in ipad. 
