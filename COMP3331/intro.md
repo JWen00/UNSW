@@ -1,4 +1,4 @@
-## What is the internet 
+## Introduction | What's the internet
 
 The internet is a network of networks containing: 
 * End Systems _(e.g. phones, computers, laptops)_ 

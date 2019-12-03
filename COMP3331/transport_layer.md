@@ -111,11 +111,11 @@ RDT is not too bad but we can use pipelining to increase utilisation. (sending m
 
 1. Go Back N 
 
-Sender has up to N unacked packets and as a single timer for the oldest one. When the timer expires, retransmit all the unacked packets. 
+Sender has up to N unACK'ed packets and as a single timer for the oldest one. When the timer expires, retransmit all the unACK'ed packets. 
 
 There is no buffer so out of order packets are discarded. 
 
-Receiver only sendss cumulative acks and does't ack if there has been a gap. 
+Receiver only sends cumulative acks and does't ack if there has been a gap. 
 
 2. Selective repeat 
 
