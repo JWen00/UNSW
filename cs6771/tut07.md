@@ -25,7 +25,9 @@ This is often bad since there will be an instantiaion for every single different
 |T& | Can be changed to const or T&& (rvalue) with std::move|
 |T&& | Can only be converted int const T&
 |const T&|  Const cannot change|
- OR 
+ 
+OR 
+
  |type|lvalue|const lvalue|rvalue|const rvalue|
  |----|------|------------|------|------------|
 |template T&&|True|True|True|True|
@@ -42,58 +44,31 @@ void lvalue(std::string& lvalue);
 void rvalue(std::string&& rvalue);
 void value(std::string value);
 
-// "hello" is a const rvalue, can be passed as lvalue
-c_lvalue("hello");
+// "hello" is a const rvalue (T&&)
+c_lvalue("hello"); // T&& -> const T&
+rvalue("hello");  // T&& -> T&&
+value("hello"); 
 
-// "hello" is a const rvalue, can be passed into rvalue
-rvalue("hello");
-
-// "hello" is a const rvalue, can be passed into value
-value("hello");
-
-// s is a lvalue
+// s is a lvalue (T&)
 std::string s = "world";
-
-// lvalue cannot be passed as rvalue without std::move
-rvalue(s); // WONT COMPILE
-
-// lvalue can be passed as value
+rvalue(s); // WONT COMPILE T& -/>T&& (need std move)
 value(s);
 
 // lvalue can be passed as const lvalue
-c_lvalue(s);
+c_lvalue(s);            // T& -> const T&
+lvalue(s);             // T& -> T&
+lvalue("hello");      // WONT COMPILE // T&& -/> T& (only const T&)
 
-// lvalue can be passed as lvalue
-lvalue(s);
-
-// rvalue cannot be passed into lvalue 
-lvalue("hello");  // WONT COMPILE
-
-// const lvalue CAN take rvalue
-c_lvalue(std::move(s)); 
-
-// rvalue can take rvalue
-rvalue(std::move(s));
-
-// lvalue cannot take rvalue
-lvalue(std::move(s));  // WONT COMPILE 
-
-// value can take rvalue
-value(std::move(s));
+c_lvalue(std::move(s)); // T&& -> const T&
+rvalue(std::move(s)); // T&& -> T&&
+lvalue(std::move(s));  // WONT COMPILE  T&& -/> T& (only const T&)
+value(std::move(s)); 
 
 // s2 is a char* but is RVALUE
 auto s2 = "goodbye";
-
-// lvalue can take rvalue 
-c_lvalue(s2);
-
-// lvalue can't take rvalue without std::move
-lvalue(s2); // WONT COMPILE
-
-// rvalue can take rvalue
-rvalue(s2); 
-
-// lvalue can be changed into value
+lvalue(s2); // WONT COMPILE T&& -/> T& (only const T&)
+c_lvalue(s2); // T&& -> const T&
+rvalue(s2);  // T&& -> T&&
 value(s2);
 
 ```
