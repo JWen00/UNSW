@@ -21,7 +21,7 @@ for password in passwords:
         "password" : password,
     }
     
-    r = requests.post("https://files.quoccabank.com/", proxies=proxy, data=urllib.parse.urlencode(params), verify=False, headers={
+    r = requests.post("{website}/", proxies=proxy, data=urllib.parse.urlencode(params), verify=False, headers={
     "Content-Type": "application/x-www-form-urlencode
     d"
     })

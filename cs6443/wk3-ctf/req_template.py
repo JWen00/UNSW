@@ -1,4 +1,3 @@
-# https://files.quoccabank.com/admin
 
 # Kindly donated by github.com/featherbear
 

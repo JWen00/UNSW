@@ -54,11 +54,11 @@ Note how we have ended the quotation even though that was not the developer's in
 2) Find which SQL version it is 
 3) Try to get everything in the table
 
-## Weekly CTF Testing for SQLi [bigapp.quoccabank.com]
+## Weekly CTF Testing for SQLi [bigapp]
 0) Notice that the site calls an api after sanitising the request so we have to make the call using the api url directly 
 
 ```
-https://quoccabank.com/api/v1/bproducts?q=PAYLOAD
+https://{website}/api/v1/bproducts?q=PAYLOAD
 ```
 1) Tested for `'` (single quotation mark) and got the output 
 
@@ -125,7 +125,7 @@ Note, we must match the number of columns within the query to the number the col
 ```
 Input: random_string')) UNION SELECT email, userid, password, type, fname, lname from users -- .
 ```
-From here, we can see the email `admin@quoccabank.com` and the password is a hash (Which we can reverse MD5 lookup). 
+From here, we can see the email `admin@admin.com` and the password is a hash (Which we can reverse MD5 lookup). 
 
 5) Then we can try to obtain sensitive information which the site hides 
 
