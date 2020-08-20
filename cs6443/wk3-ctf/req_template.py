@@ -13,7 +13,7 @@ proxy = {
 }
 
 params = {
-    "myDataThing": 2
+    "myKey": "myValue"
 }
 requests.post("https://my.website/endpoint", proxies=proxy, data=urllib.parse.urlencode(params), verify=False, headers={
     "Content-Type": "application/x-www-form-urlencoded"

