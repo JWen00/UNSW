@@ -7,9 +7,10 @@
 
 `friend` when the operator doesn't take an instance of the class as the LHS argument.
 
-Not `friend` when the operator does take an instance of the class as the LHS argument
-4) Operator `==, !=, <, >` take in lhs and rhs, they're all friends
-5) Const correctness for subscript overloaders
+Not `friend` when the operator does take an instance of the class as the LHS argument  
+4) Operator `==, !=, <, >` take in lhs and rhs, they're all friends  
+5) Const correctness for subscript overloaders  
+
 ## Tutorial Exercises
 
 ### Complete the istream operator overload to read in two points from command line.
