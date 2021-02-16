@@ -1,6 +1,6 @@
-------------------------------------------------------------
+
 Directed graph, also known as digraph:
-------------------------------------------------------------
+
     > The relationship is not mutual
     > You can have self-loops
     You can have parallel edges
@@ -82,7 +82,8 @@ Kruskals Algorithm - Go through all the edges by weight
 
 Prims Algorithm - Consider available edges and chose the one with the lowest weight
 
+Final Notes: 
 
-DFS && BFS   
-DFS Uses a stack  
-BFS Uses a queue  
+* DFS && BFS   
+* DFS Uses a stack  
+* BFS Uses a queue  

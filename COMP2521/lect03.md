@@ -1,4 +1,4 @@
-# Recusion
+# Recursion
 
 > "..this value, and the rest of the values.."
 

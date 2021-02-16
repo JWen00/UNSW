@@ -19,7 +19,7 @@ It's all about that systematic appproach!
 
 The **methodology** is a *framework* to structure plan and control the development of the software system. 
 
-![SD Life Cycle](/images/SD_life_cycle.png) 
+![SD Life Cycle](images/SD_life_cycle.png) 
 
 #### Analysis/Specification 
 

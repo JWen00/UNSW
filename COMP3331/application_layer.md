@@ -1,6 +1,6 @@
 # Appplication Layer 
 
-The application lAyer allows end systems to communicate with _Interprocess communication (IPC)_ 
+The application layer allows end systems to communicate with _Interprocess communication (IPC)_ 
 
 This is done through the use of _sockets_ 
 

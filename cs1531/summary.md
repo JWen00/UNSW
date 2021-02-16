@@ -78,8 +78,6 @@ High-level modules should be independant of Low-level modules (low coupling)
 * too complex 
 *  revision 
 
-
-# INVEST 
-
+# INVEST
 # CCC  (User Stories) 
 
